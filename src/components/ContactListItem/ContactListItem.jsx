@@ -14,7 +14,7 @@ export const ContactListItem = ({ filteredContact }) => {
   return (
     <li className={css.contactListItem}>
       <p>{filteredContact.name}:</p>
-      <p>{filteredContact.number}</p>
+      <p><a href={'tel:'+filteredContact.number} className={css.contactListLink}>{filteredContact.number}</a></p>
       <button onClick={handleDelete}>Delete</button>
     </li>
   );

@@ -4,3 +4,20 @@
   margin-bottom: 10px;
   gap: 30px;
 }
+
+.contactListItem > p {
+  flex-basis: 150px;
+}
+
+.contactListLink {
+  text-decoration: none;
+  color: #000;
+  transition: all 250ms ease-in-out;
+}
+
+.contactListLink:hover,
+.contactListLink:focus {
+  text-decoration-line: underline;
+  text-decoration-color: cadetblue;
+  text-decoration-thickness: 2px;
+}
